@@ -1,0 +1,61 @@
+{
+  "dedup": {
+    "rows_before": 4296,
+    "conflicting_label_texts": 0,
+    "duplicates_removed": 118,
+    "rows_after": 4178,
+    "ham": 3275,
+    "spam": 903,
+    "train1_rows": 2228,
+    "train2_rows": 2068,
+    "test_rows": 6447
+  },
+  "final_model": "TF-IDF + Linear SVM",
+  "final_param": 30.0,
+  "confusion_matrix_[[TN,FP],[FN,TP]]": [
+    [
+      3251,
+      24
+    ],
+    [
+      49,
+      854
+    ]
+  ],
+  "pooled_oof_metrics": {
+    "accuracy": 0.982527525131642,
+    "macro_f1": 0.9739545647658107,
+    "spam_precision": 0.9726651480637813,
+    "spam_recall": 0.9457364341085271,
+    "spam_f1": 0.9590117911285795,
+    "ham_fpr": 0.00732824427480916
+  },
+  "per_source_oof": {
+    "sms": {
+      "accuracy": 0.9865988909426987,
+      "macro_f1": 0.969656809013798,
+      "spam_precision": 0.9923371647509579,
+      "spam_recall": 0.9055944055944056,
+      "spam_f1": 0.946983546617916,
+      "ham_fpr": 0.0010649627263045794
+    },
+    "email": {
+      "accuracy": 0.9781529294935452,
+      "macro_f1": 0.9742977832795212,
+      "spam_precision": 0.9643435980551054,
+      "spam_recall": 0.9643435980551054,
+      "spam_f1": 0.9643435980551054,
+      "ham_fpr": 0.015748031496062992
+    }
+  },
+  "n_false_positive": 24,
+  "n_false_negative": 49,
+  "test_pred_spam": 1282,
+  "test_n": 6447,
+  "test_spam_rate": 0.19885217930820537,
+  "test_spam_rate_email_like": 0.279084756687077,
+  "test_spam_rate_sms_like": 0.12440191387559808,
+  "seed": 42,
+  "folds": 5,
+  "runtime_s": 31
+}
